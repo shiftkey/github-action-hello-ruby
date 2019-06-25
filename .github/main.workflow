@@ -1,6 +1,6 @@
 workflow "When new commits pushed" {
-  on = "push"
   resolves = ["Say Hello Ruby"]
+  on = "push"
 }
 
 action "Say Hello Ruby" {
