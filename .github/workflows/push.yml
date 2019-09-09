@@ -1,0 +1,10 @@
+on: push
+name: When new commits pushed
+jobs:
+  sayHelloRuby:
+    name: Say Hello Ruby
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Say Hello Ruby
+      uses: ./.github/actions/hello-ruby
